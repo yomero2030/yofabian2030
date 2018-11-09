@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Solicitud de Empleo</h1>
+    <form>
+        <h1>Ingrese sus datos en los campos que se muestran para completar su solicitud</h1>
+        <div class="contentform">
+            <div class="leftcontact">
+                <div class="form-group">
+                    <p>Nombre<span>*</span></p>
+                    <span class="icon-case"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                    <input type="text" name="nombre" id="nom" data-rule="required" data-msg="Necesita rellenar este campo">
+                    <div class="validacion"></div>
+                </div>
+                <div class="form-group">
+                    <p>Apellido Paterno<span>*</span></p>
+                    <span class="icon-case"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                    <input type="text" name="apellidoP" id="lastP" data-rule="required" data-msg="Necesita rellenar este campo">
+                    <div class="validacion"></div>
+                </div>
+                <div class="form-group">
+                    <p>Apellido Materno<span>*</span></p>
+                    <span class="icon-case"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                    <input type="text" name="apellidoM" id="lastM" data-rule="required" data-msg="Necesita rellenar este campo">
+                    <div class="validacion"></div>
+                </div>
+                <div class="form-group">
+                    <p>DNI<span>*</span></p>
+                    <span class="icon-case"><i class="fas fa-id-card"></i></span>
+                    <input class="text" name="id" id="dni" data-rule="required" data-msg="Necesita rellenar este campo">
+                    <div class="validacion"></div>
+                </div>
+                <div class="form-group">
+                    <p>Correo<span>*</span></p>
+                    <span class="icon-case"><i class="fas fa-envelope"></i></span>
+                    <input type="text" name="email" id="email" data-rule="required" data-msg="Necesita rellenar este campo">
+                    <div class="validacion"></div>
+                </div>
+            </div>
+            <div class="rightcontact">
+                <div class="form-group">
+                    <p>Numero de Telefono<span>*</span></p>
+                    <span class="icon-case"><i class="fas fa-phone"></i></span>
+                    <input type="text" name="numT" id="telefono" data-rule="maxlen:10" data-msg="Deben de ser al menos 10 digitos">
+                    <div class="validacion"></div>
+                </div>
+                <div class="form-group">
+                    <p>Direccion<span>*</span></p>
+                    <span class="icon-case"><i class="fas fa-home"></i></span>
+                    <input class="text" name="direccion" id="dir" data-rule="required" data-msg="Necesita rellenar este campo">
+                    <div class="validacion"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
